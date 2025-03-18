@@ -21,13 +21,11 @@ const CardStackingTwo: React.FC = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: cardWrapperRef.current,
-
         start: "-20% 11%",
         end: "bottom top",
         scrub: 1,
         pin: ".change-status",
         invalidateOnRefresh: true,
-        markers: true,
       },
     });
 
